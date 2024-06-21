@@ -1,0 +1,32 @@
+
+.main_body{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image_rotator_box{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.6px red solid; */
+}
+.rotating_image{
+    /* border: 1px black solid; */
+    animation: rotate_img 4s infinite linear;
+}
+
+@keyframes rotate_img{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
