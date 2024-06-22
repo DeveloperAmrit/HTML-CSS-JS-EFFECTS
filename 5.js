@@ -4,7 +4,7 @@ let color_of_subpages_list = ['gray','pink','yellow','lightgreen']
 
 for(let i=0;i<subpages.length;i++){
     subpages[i].style.zIndex = i+1
-    subpages[i].style.background = color_of_subpages_list[i]
+    subpages[i].style.background = color_of_subpages_list[i%4]
     console.log('WORKING')
 }
 
